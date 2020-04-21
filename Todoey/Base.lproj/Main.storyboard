@@ -29,7 +29,13 @@
                             <outlet property="delegate" destination="AKe-fr-hTA" id="FIp-pN-ofT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="4wA-77-Bvp"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="4wA-77-Bvp">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="rRr-t4-FBC">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="AKe-fr-hTA" id="KP5-h5-GlI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9e2-TY-71Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,4 +64,7 @@
             <point key="canvasLocation" x="1089.8550724637682" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
 </document>
